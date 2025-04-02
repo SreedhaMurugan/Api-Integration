@@ -40,7 +40,7 @@ const ProductList = ({ price, originalPrice, rating, reviews }) => {
 
         {/* Product List */}
         {!loading && !error && (
- <Grid container spacing={3} justifyContent="center">
+ <Grid container spacing={3} justifyContent="center" marginBottom="2rem">
  {products.map((product) => (
    <Grid item xs={12} sm={12} key={product.id} display="flex" justifyContent="center" >
      <Card sx={{ height: 500, maxWidth: 400, display: "flex", flexDirection: "column", backgroundColor: "#ffe0b2" }}>
